@@ -1,4 +1,4 @@
-# Week 1 Project - Tic Tac Toe
+# Week 2 Project - Tic Tac Toe
 
 **Objective:** Build a tic tac toe game in HTML and pure JavaScript.
 
