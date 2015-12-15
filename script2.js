@@ -46,6 +46,12 @@ $('.position').click(function() {
       console.log('party on wayne');
       //enters x or o into the current target
       $(event.currentTarget).html(letter);
+      if (letter === 'X') {
+        $(event.currentTarget).css("background-color", "red");
+      }
+      if (letter === 'O') {
+        $(event.currentTarget).css("background-color", "blue");
+      }
       //iterates through all possible winning combos
       for (i = 0; i < possibleWins.length; i++) {
         //a hit is a positive id on a winning combo
@@ -64,10 +70,10 @@ $('.position').click(function() {
           scoreboard.win = true;
 
             if (scoreboard.winner == 'X') {
-              $('#x_wins').html('Player "X" Wins: ' + (scoreboard.xGameScore + 1));
+              $('#x_wins').html('Player "X" Wins: ' + (scoreboard.xGameScore += 1));
             }
             if (scoreboard.winner == 'O') {
-              $('#o_wins').html('Player "O" Wins: ' + (scoreboard.oGameScore + 1));
+              $('#o_wins').html('Player "O" Wins: ' + (scoreboard.oGameScore += 1));
             }
         }
       }
@@ -94,11 +100,13 @@ $('#play_again').click(function() {
   console.log(scoreboard.win);
   console.log(scoreboard.winner);
 
-var possibleWins = [["1","2","3"], ["4","5","6"], ["7","8","9"],
+  possibleWins = [["1","2","3"], ["4","5","6"], ["7","8","9"],
                    ["1","4","7"], ["2","5","8"], ["3","6","9"],
                    ["1","5","9"], ["3","5","7"]];
 
 console.log(possibleWins);
+
+$('.position').css("background-color", "rgba(255, 255, 255, .7)");
 
 });
 
