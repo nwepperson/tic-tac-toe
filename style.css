@@ -8,6 +8,7 @@ body {
   width: 90%;
   padding: 0;
   margin: auto;
+  margin-top: 5%;
   background: url(bkrnd.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -131,6 +132,7 @@ button {
   font-family: fantasy;
   color: black;
   font-weight: bold;
+  padding: 5px;
 }
 
 #x_wins:hover, #o_wins:hover, #player_turn:hover {
