@@ -56,6 +56,9 @@ aside {
   height: 40%;
   margin: 0;
   padding: 10px;
+  background-color: rgba(0, 5, 0, .4);
+  color: white;
+  border: 1px solid white;
 }
 
 footer {
@@ -72,16 +75,12 @@ h2 {
   font-family: fantasy;
   color: black;
   text-decoration: underline;
-  border-radius: 10px;
-  border: solid #000000 2px;
 }
 
 h2:hover {
   background: #3410c7;
   background-image: linear-gradient(to bottom, #3410c7, #890bb3);
   color: white;
-  border-radius: 10px;
-  border: solid #000000 2px;
 }
 
 button {

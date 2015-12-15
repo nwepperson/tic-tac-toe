@@ -108,8 +108,8 @@ $('#play_again').click(function() {
 
 console.log(possibleWins);
 
-$('.position').css("background-color", "rgba(0, 0, 0, .4)");
-$('#player_turn').html('Make your move ' + getPlayer(scoreboard.turn));
+  $('.position').css("background-color", "rgba(0, 0, 0, .4)");
+  $('#player_turn').html('Make your move ' + getPlayer(scoreboard.turn));
 
 });
 
