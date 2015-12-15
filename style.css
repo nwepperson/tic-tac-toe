@@ -67,7 +67,19 @@ footer {
 }
 
 h2 {
+  background: #c6d934;
+  background-image: linear-gradient(to bottom, #c6d934, #b8572b);
+  border-radius: 10px;
   text-align: center;
+  font-family: fantasy;
+  color: black;
+  text-decoration: underline;
+}
+
+h2:hover {
+  background: #3410c7;
+  background-image: linear-gradient(to bottom, #3410c7, #890bb3);
+  color: white;
 }
 
 button {
@@ -92,7 +104,7 @@ button {
   -webkit-border-radius: 10;
   -moz-border-radius: 10;
   border-radius: 10px;
-  font-family: Georgia;
+  font-family: fantasy;
   color: #000000;
   font-size: 30px;
   padding: 10px 20px 10px 20px;
@@ -108,4 +120,21 @@ button {
   background-image: -o-linear-gradient(top, #3410c7, #890bb3);
   background-image: linear-gradient(to bottom, #3410c7, #890bb3);
   text-decoration: none;
+  color: white;
+}
+
+#x_wins, #o_wins, #player_turn {
+  background: #c6d934;
+  background-image: linear-gradient(to bottom, #c6d934, #b8572b);
+  border-radius: 10px;
+  text-align: center;
+  font-family: fantasy;
+  color: black;
+  font-weight: bold;
+}
+
+#x_wins:hover, #o_wins:hover, #player_turn:hover {
+  background: #3410c7;
+  background-image: linear-gradient(to bottom, #3410c7, #890bb3);
+  color: white;
 }
