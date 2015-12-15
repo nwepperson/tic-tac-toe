@@ -45,7 +45,14 @@ $('.position').click(function() {
     if (scoreboard.win == false) {
       console.log('party on wayne');
       //enters x or o into the current target
-      $(event.currentTarget).html(letter);
+      if (letter === 'X') {
+        $(event.currentTarget).css("background-color", "rgba(255, 0, 0, .5)");
+        $(event.currentTarget).append("<img id='x' src='x.png'/>");
+      }
+      if (letter === 'O') {
+        $(event.currentTarget).css("background-color", "rgba(0, 0, 255, .5)");
+        $(event.currentTarget).append("<img id='o' src='o.png'/>");
+      }
       //iterates through all possible winning combos
       for (i = 0; i < possibleWins.length; i++) {
         //a hit is a positive id on a winning combo
@@ -62,23 +69,25 @@ $('.position').click(function() {
           console.log('winner');
           scoreboard.winner = letter;
           scoreboard.win = true;
+          $('#player_turn').html(letter + ' wins!');
 
             if (scoreboard.winner == 'X') {
-              $('#x_wins').html('Player "X" Wins: ' + (scoreboard.xGameScore + 1));
+              $('#x_wins').html('Player "X" Wins: ' + (scoreboard.xGameScore += 1));
             }
             if (scoreboard.winner == 'O') {
-              $('#o_wins').html('Player "O" Wins: ' + (scoreboard.oGameScore + 1));
+              $('#o_wins').html('Player "O" Wins: ' + (scoreboard.oGameScore += 1));
             }
         }
       }
       //changes player turn
       scoreboard.turn ++;
+      if (scoreboard.win === false) {
       $('#player_turn').html('Make your move ' + getPlayer(scoreboard.turn));
-    }
-
-      else {
-        console.log('cats game');
+        if (scoreboard.turn > 8) {
+          $('#player_turn').html('Cats Game');
+        }
       }
+    }
     }
     else {
       $('#player_turn').html('Cannot play there!');
@@ -94,11 +103,14 @@ $('#play_again').click(function() {
   console.log(scoreboard.win);
   console.log(scoreboard.winner);
 
-var possibleWins = [["1","2","3"], ["4","5","6"], ["7","8","9"],
+  possibleWins = [["1","2","3"], ["4","5","6"], ["7","8","9"],
                    ["1","4","7"], ["2","5","8"], ["3","6","9"],
                    ["1","5","9"], ["3","5","7"]];
 
 console.log(possibleWins);
+
+$('.position').css("background-color", "rgba(255, 255, 255, .7)");
+$('#player_turn').html('Make your move ' + getPlayer(scoreboard.turn));
 
 });
 

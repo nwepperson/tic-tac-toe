@@ -45,12 +45,13 @@ $('.position').click(function() {
     if (scoreboard.win == false) {
       console.log('party on wayne');
       //enters x or o into the current target
-      $(event.currentTarget).html(letter);
       if (letter === 'X') {
-        $(event.currentTarget).css("background-color", "red");
+        $(event.currentTarget).css("background-color", "rgba(255, 0, 0, .5)");
+        $(event.currentTarget).append("<img id='x' src='x.png'/>");
       }
       if (letter === 'O') {
-        $(event.currentTarget).css("background-color", "blue");
+        $(event.currentTarget).css("background-color", "rgba(0, 0, 255, .5)");
+        $(event.currentTarget).append("<img id='o' src='o.png'/>");
       }
       //iterates through all possible winning combos
       for (i = 0; i < possibleWins.length; i++) {
@@ -68,7 +69,7 @@ $('.position').click(function() {
           console.log('winner');
           scoreboard.winner = letter;
           scoreboard.win = true;
-
+          $('#player_turn').html(letter + ' wins!');
             if (scoreboard.winner == 'X') {
               $('#x_wins').html('Player "X" Wins: ' + (scoreboard.xGameScore += 1));
             }
@@ -79,12 +80,13 @@ $('.position').click(function() {
       }
       //changes player turn
       scoreboard.turn ++;
+      if (scoreboard.win === false) {
       $('#player_turn').html('Make your move ' + getPlayer(scoreboard.turn));
-    }
-
-      else {
-        console.log('cats game');
+        if (scoreboard.turn > 8) {
+          $('#player_turn').html('Cats Game');
+        }
       }
+    }
     }
     else {
       $('#player_turn').html('Cannot play there!');
@@ -107,6 +109,7 @@ $('#play_again').click(function() {
 console.log(possibleWins);
 
 $('.position').css("background-color", "rgba(255, 255, 255, .7)");
+$('#player_turn').html('Make your move ' + getPlayer(scoreboard.turn));
 
 });
 
