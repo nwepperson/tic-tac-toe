@@ -46,12 +46,12 @@ $('.position').click(function() {
       console.log('party on wayne');
       //enters x or o into the current target
       if (letter === 'X') {
-        $(event.currentTarget).css("background-color", "rgba(255, 0, 0, .5)");
-        $(event.currentTarget).append("<img id='x' src='x.png'/>");
+        $(event.currentTarget).css("background-color", "rgba(10, 10, 10, .7)");
+        $(event.currentTarget).append("<img id='x' src='x2.png'/>");
       }
       if (letter === 'O') {
-        $(event.currentTarget).css("background-color", "rgba(0, 0, 255, .5)");
-        $(event.currentTarget).append("<img id='o' src='o.png'/>");
+        $(event.currentTarget).css("background-color", "rgba(10, 10, 10, .7)");
+        $(event.currentTarget).append("<img id='o' src='o1.png'/>");
       }
       //iterates through all possible winning combos
       for (i = 0; i < possibleWins.length; i++) {
@@ -70,7 +70,6 @@ $('.position').click(function() {
           scoreboard.winner = letter;
           scoreboard.win = true;
           $('#player_turn').html(letter + ' wins!');
-
             if (scoreboard.winner == 'X') {
               $('#x_wins').html('Player "X" Wins: ' + (scoreboard.xGameScore += 1));
             }
@@ -109,7 +108,7 @@ $('#play_again').click(function() {
 
 console.log(possibleWins);
 
-$('.position').css("background-color", "rgba(255, 255, 255, .7)");
+$('.position').css("background-color", "rgba(0, 0, 0, .4)");
 $('#player_turn').html('Make your move ' + getPlayer(scoreboard.turn));
 
 });
