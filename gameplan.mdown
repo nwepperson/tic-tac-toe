@@ -1,0 +1,43 @@
+1. start with making the board
+* use three divs as rows
+* each row div will contain three position divs
+* make an aside section for keeping score and a console
+* use the footer to contain the play again button
+* give each position an 'id' to reference a position in a winning combo
+
+2. start with basic css
+* make sure all of my positions are in the right place and dynamically sized
+* make the html 100% of the viewport so i dont have to scroll
+* use borders to keep track of positioning
+
+3. write the logic
+* declare the global variables like winning combos and the scoreboard variables
+* define functions to use those variables to indicate player turn, player scoreboard, etc.
+* establish click events for all the positions
+* determine whether a position can be played
+* use the positions id to insert the players letter into the winning combos array
+* change player turn
+* try to find a winner on every valid click
+* add to the winners score
+* if no winner and the move max is met the log cats game
+* use the play again button to reset the boards and sets player turn to x
+
+4. make it pretty
+* a nice background image would be nice
+* maybe try to make everything not so square
+* ad some gradients to the score board
+* find some prettier 'x' and 'o' images
+* make sure everything is still sizing correctly
+
+5. testing
+* test all winning combos and cats game to make sure i get the proper response
+* try it on my phone
+* makke sure the play again button works
+* make sure score keeping works
+
+6. deploy
+* update all local files and push to my repo
+* branch from master to gh-pages
+* push to gh-pages
+* test that shit again
+
