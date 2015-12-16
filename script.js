@@ -90,7 +90,10 @@ $('.position').click(function() {
     }
     else {
       if ($('#player_turn').html() !== 'No winner this time!') {
-        $('#player_turn').html('Cannot play there!');
+        if (($('#player_turn').html() !== 'X wins!') &&
+            ($('#player_turn').html() !== 'O wins!')) {
+          $('#player_turn').html('Cannot play there!');
+        }
       }
     }
 });
