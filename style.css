@@ -51,7 +51,7 @@ body {
 
 aside {
   position: relative;
-  top: -30px;
+  top: -4%;
   float: right;
   width: 27%;
   height: 40%;
@@ -61,7 +61,7 @@ aside {
 
 footer {
   position: relative;
-  height: 10%;
+  height: 15%;
   width: 50%;
 }
 
