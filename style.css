@@ -76,6 +76,7 @@ h2 {
   border-radius: 10px;
   border: solid #000000 2px;
   font-size: 30px;
+  text-shadow: 2px 2px #ffffff;
 }
 
 h2:hover {
@@ -115,6 +116,7 @@ button {
   border: solid #000000 2px;
   text-decoration: none;
   float: left;
+  text-shadow: 2px 2px #ffffff;
 }
 
 .btn:hover {
@@ -125,7 +127,7 @@ button {
   background-image: -o-linear-gradient(top, #3410c7, #890bb3);
   background-image: linear-gradient(to bottom, #3410c7, #890bb3);
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 #player_turn {
@@ -139,6 +141,7 @@ button {
   padding: 5px;
   border: solid #000000 2px;
   font-size: 26px;
+  text-shadow: 2px 2px #ffffff;
 }
 
 #player_turn:hover {
@@ -158,6 +161,7 @@ button {
   padding: 5px;
   border: solid #000000 2px;
   font-size: 26px;
+  text-shadow: 2px 2px #ffffff;
 }
 
 #x_wins {
@@ -171,6 +175,7 @@ button {
   padding: 5px;
   border: solid #000000 2px;
   font-size: 26px;
+  text-shadow: 2px 2px #ffffff;
 }
 
 #o_wins:hover {
