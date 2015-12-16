@@ -51,7 +51,7 @@ body {
 aside {
   position: relative;
   top: 20px;
-  float: left;
+  float: right;
   width: 27%;
   height: 40%;
   margin: 0;
@@ -113,6 +113,7 @@ button {
   padding: 10px 20px 10px 20px;
   border: solid #000000 2px;
   text-decoration: none;
+  float: left;
 }
 
 .btn:hover {
