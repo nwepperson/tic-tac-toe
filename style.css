@@ -66,8 +66,8 @@ footer {
 }
 
 h2 {
-  background: #c6d934;
-  background-image: linear-gradient(to bottom, #c6d934, #b8572b);
+  background: #0dff00;
+  background-image: linear-gradient(to bottom, #0dff00, #f7ff00);
   border-radius: 10px;
   text-align: center;
   font-family: fantasy;
@@ -79,9 +79,9 @@ h2 {
 }
 
 h2:hover {
-  background: #3410c7;
-  background-image: linear-gradient(to bottom, #3410c7, #890bb3);
-  color: white;
+  background: #f7ff00;
+  background-image: linear-gradient(to bottom, #f7ff00, #0dff00);
+  color: black;
   border-radius: 10px;
   border: solid #000000 2px;
 }
@@ -128,9 +128,9 @@ button {
   color: white;
 }
 
-#x_wins, #o_wins, #player_turn {
-  background: #c6d934;
-  background-image: linear-gradient(to bottom, #c6d934, #b8572b);
+#player_turn {
+  background: #1100ff;
+  background-image: linear-gradient(to bottom, #1100ff, #00ffbf);
   border-radius: 10px;
   text-align: center;
   font-family: fantasy;
@@ -141,8 +141,46 @@ button {
   font-size: 26px;
 }
 
-#x_wins:hover, #o_wins:hover, #player_turn:hover {
-  background: #3410c7;
-  background-image: linear-gradient(to bottom, #3410c7, #890bb3);
-  color: white;
+#player_turn:hover {
+  background: #00ffbf;
+  background-image: linear-gradient(to bottom, #00ffbf, #1100ff);
+  color: black;
+}
+
+#o_wins {
+  background: #ff0000;
+  background-image: linear-gradient(to bottom, #ff0000, #8c00ff);
+  border-radius: 10px;
+  text-align: center;
+  font-family: fantasy;
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+  border: solid #000000 2px;
+  font-size: 26px;
+}
+
+#x_wins {
+  background: #f7ff00;
+  background-image: linear-gradient(to bottom, #f7ff00, #ff0000);
+  border-radius: 10px;
+  text-align: center;
+  font-family: fantasy;
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+  border: solid #000000 2px;
+  font-size: 26px;
+}
+
+#o_wins:hover {
+  background: #8c00ff;
+  background-image: linear-gradient(to bottom, #8c00ff, #ff0000);
+  color: black;
+}
+
+#x_wins:hover {
+  background: #ff0000;
+  background-image: linear-gradient(to bottom, #ff0000, #f7ff00);
+  color: black;
 }
