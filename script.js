@@ -83,13 +83,15 @@ $('.position').click(function() {
       if (scoreboard.win === false) {
       $('#player_turn').html('Make your move ' + getPlayer(scoreboard.turn));
         if (scoreboard.turn > 8) {
-          $('#player_turn').html('Cats Game');
+          $('#player_turn').html('No winner this time!');
         }
       }
     }
     }
     else {
-      $('#player_turn').html('Cannot play there!');
+      if ($('#player_turn').html() !== 'No winner this time!') {
+        $('#player_turn').html('Cannot play there!');
+      }
     }
 });
 
@@ -108,8 +110,8 @@ $('#play_again').click(function() {
 
 console.log(possibleWins);
 
-$('.position').css("background-color", "rgba(0, 0, 0, .4)");
-$('#player_turn').html('Make your move ' + getPlayer(scoreboard.turn));
+  $('.position').css("background-color", "rgba(0, 0, 0, .4)");
+  $('#player_turn').html('Make your move ' + getPlayer(scoreboard.turn));
 
 });
 

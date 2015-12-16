@@ -46,6 +46,7 @@ body {
   color: black;
   text-align: center;
   z-index: 0;
+  border-radius: 20%;
 }
 
 aside {
