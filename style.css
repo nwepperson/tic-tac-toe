@@ -4,8 +4,8 @@ html {
 }
 
 body {
-  height: 80%;
-  width: 90%;
+  height: 95%;
+  width: 95%;
   padding: 0;
   margin: auto;
   margin-top: 5%;
@@ -18,7 +18,7 @@ body {
 
 #board {
   height: 90%;
-  width: 68%;
+  width: 65%;
   padding:0;
   position: relative;
   float: left;
@@ -51,7 +51,7 @@ body {
 
 aside {
   position: relative;
-  top: 20px;
+  top: -30px;
   float: right;
   width: 27%;
   height: 40%;
@@ -61,7 +61,7 @@ aside {
 
 footer {
   position: relative;
-  height: 15%;
+  height: 10%;
   width: 50%;
 }
 
