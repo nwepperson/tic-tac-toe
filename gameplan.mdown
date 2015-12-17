@@ -36,6 +36,7 @@
 * make sure score keeping works
 
 6. deploy
+* clean up code
 * update all local files and push to my repo
 * branch from master to gh-pages
 * push to gh-pages
